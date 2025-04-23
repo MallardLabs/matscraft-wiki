@@ -20,5 +20,5 @@ EXPOSE 8080
 # Set environment variable for Next.js to use the correct port
 ENV PORT 8080
 
-# Start the Next.js app
+# Start the Next.js app -test
 CMD ["npm", "start", "-p", "8080"]
