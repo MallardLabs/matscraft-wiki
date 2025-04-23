@@ -20,7 +20,7 @@ jobs:
           submodules: true
           lfs: false
       - name: Install dependencies with legacy peer deps
-        run: pnpm install
+        run: npm install --legacy-peer-deps
       - name: Debug env
         run: echo "URL is ${secret.NEXT_PUBLIC_SUPABASE_URL:0:5}****"
         env:
