@@ -23,6 +23,13 @@ jobs:
         run: npm install --legacy-peer-deps
       - name: Build project
         run: npm run build
+        env:
+          NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
+          NEXT_PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
+          DRIP_API: ${{ secrets.DRIP_API }}
+          REALM: ${{ secrets.REALM }}
+          REALM_POINT_ID: ${{ secrets.REALM_POINT_ID }}
+          SECRET_KEY: ${{ secrets.SECRET_KEY }}
       - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
