@@ -33,9 +33,9 @@ export default function Home() {
       </div>
       <div className="text-muted-foreground flex items-center gap-2 mx-auto">
         <TerminalSquareIcon className="w-5 h-5 sm:mr-1 mt-0.5" />
-        <span className="line-through">
+        <span>
           {" "}
-          {"matscraft.mallardlabs.xyz:19132"}
+          {"play.matscraft.xyz:19132"}
         </span>
       </div>
     </div>
